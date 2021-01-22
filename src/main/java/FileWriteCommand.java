@@ -3,6 +3,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * implements the WriteCommand interface to persist the user in the user registry
+ */
 public class FileWriteCommand implements WriteCommand {
     private File file;
 
@@ -17,7 +20,7 @@ public class FileWriteCommand implements WriteCommand {
     }
 
     /**
-     * main method : presists a user in the user registry(file system) whose object is given
+     * main method : persists a user in the user registry(file system) whose object is given
      * as a parameter to the method
      *
      * @param user : user to be entered in the user registry(file system)

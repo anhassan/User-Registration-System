@@ -1,5 +1,8 @@
 import java.io.*;
 
+/**
+ * implements the ReadCommand interface to read the user from the user registry
+ */
 public class FileReadCommand implements ReadCommand {
     private File file;
 

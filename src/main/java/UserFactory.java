@@ -2,10 +2,6 @@
  * A factory design pattern for producing user objects
  */
 public class UserFactory extends User {
-    private String username;
-    private String password;
-    private String role;
-
     /**
      * constructor method : inherits and uses the user class constructor
      *
@@ -23,6 +19,6 @@ public class UserFactory extends User {
      * @return an user created via the user factory class
      */
     public User createUser() {
-        return new User(this.username, this.password, this.role);
+        return new User(this.getUsername(), this.getPassword(), this.getRole());
     }
 }
